@@ -102,7 +102,7 @@ export class Entity extends Base {
       if (item.toJSON) {
         item = item.toJSON()
       }
-      if (!item.id) {
+      if (!item.id && !item.lid) {
         item.lid = getRandomId()
       }
       if (!_.isEmpty(item.attributes)) {
