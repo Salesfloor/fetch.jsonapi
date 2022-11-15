@@ -1,10 +1,10 @@
 {
   "name": "fetch.jsonapi",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "description": "Fetch JSON:API with ease",
   "main": "dist/fetch.jsonapi.js",
-  "repository": "https://github.com/yeliu84/fetch.jsonapi",
-  "author": "Ye Liu",
+  "repository": "https://github.com/Salesfloor/fetch.jsonapi",
+  "author": "Salesfloor",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
