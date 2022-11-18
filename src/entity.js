@@ -101,7 +101,7 @@ export class Entity extends Base {
         item = item.toJSON()
       }
       if (!item.id) {
-        item.lid = lidCounter++
+        item.lid = `${ lidCounter++ }`
       }
       if (!_.isEmpty(item.attributes)) {
         included.push(Object.assign({}, item))
