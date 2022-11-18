@@ -44,6 +44,30 @@ export const buildUrl = (originalUrl, options = {}) => {
   return queryString ? `${url}?${queryString}` : url
 }
 
+/**
+  * Creates and store counter.
+  * Returns object with next() method. 
+  * May format counter as a string.
+  * 
+  * @param {number} startsWith The number to start the counter
+  * @param {boolean} formatAsString Format counter as a string 
+  * @returns {object}
+  */
+export const createCounter = (startsWith = 0, formatAsString = false) => {
+  let counter = startsWith;
+
+  return {
+    next: function () {
+      return formatAsString ? `${counter++}` : counter++;
+    }
+  };
+}
+
+export const getRandomId = () =>
+  `${Math.floor(Math.random() * (100000 - 10000)) + 10000}`
+
 export default {
-  buildUrl
+  buildUrl,
+  createCounter,
+  getRandomId
 }

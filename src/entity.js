@@ -1,8 +1,5 @@
 import _ from 'lodash'
-
-const getRandomId = () =>
-  `${Math.floor(Math.random() * (100000 - 10000)) + 10000}`
-
+import { createCounter } from './utils'
 class Base {
   constructor(raw) {
     this._raw = _.cloneDeep(raw) || {}
@@ -93,6 +90,8 @@ export class Entity extends Base {
     })
   }
   setRelated(key, resource, replace = true) {
+    const counterLid = createCounter(1, true);
+
     if (resource.toJSON) {
       resource = resource.toJSON()
     }
@@ -103,7 +102,7 @@ export class Entity extends Base {
         item = item.toJSON()
       }
       if (!item.id) {
-        item.lid = getRandomId()
+        item.lid = counterLid.next()
       }
       if (!_.isEmpty(item.attributes)) {
         included.push(Object.assign({}, item))
