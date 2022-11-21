@@ -4,7 +4,7 @@
   "description": "Fetch JSON:API with ease",
   "main": "dist/salesfloor-fetch-jsonapi.js",
   "repository": "https://github.com/Salesfloor/salesfloor-fetch-jsonapi",
-  "author": "Salesfloor",
+  "author": "Ye Liu",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
