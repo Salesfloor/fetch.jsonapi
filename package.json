@@ -1,6 +1,6 @@
 {
   "name": "salesfloor-fetch-jsonapi",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "description": "Fetch JSON:API with ease",
   "main": "dist/salesfloor-fetch-jsonapi.js",
   "repository": "https://github.com/Salesfloor/salesfloor-fetch-jsonapi",
