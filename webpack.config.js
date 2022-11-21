@@ -9,7 +9,7 @@ const config = {
   entry: path.join(SRCDIR, 'index.js'),
   output: {
     path: DISTDIR,
-    filename: 'fetch.jsonapi.js',
+    filename: 'salesfloor-fetch-jsonapi.js',
     library: 'jsonapi',
     libraryTarget: 'umd'
   },

@@ -3,6 +3,6 @@
 .gitignore
 src/
 tests/
-fetch.jsonapi-*.tgz
+salesfloor-fetch-jsonapi-*.tgz
 babel.config.json
 webpack.config.js
