@@ -2,4 +2,4 @@
 dist/
 node_modules/
 *-error.log
-fetch.jsonapi-*.tgz
+salesfloor-fetch-jsonapi-*.tgz

@@ -1,23 +1,23 @@
-# fetch.jsonapi
+# salesfloor-fetch-jsonapi
 
-*fetch.jsonapi* is a wrapper on top of the [Fetch API][] to let you deal with [JSON:API][] endpoints with ease.
+*salesfloor-fetch-jsonapi* is a wrapper on top of the [Fetch API][] to let you deal with [JSON:API][] endpoints with ease.
 
 
 
 ## Install
 
-    yarn add fetch.jsonapi
+    yarn add salesfloor-fetch-jsonapi
 
 or
 
-    npm install fetch.jsonapi
+    npm install salesfloor-fetch-jsonapi
 
 
 
 ## How to use
 
 ```javascript
-import request from 'fetch.jsonapi'
+import request from 'salesfloor-fetch-jsonapi'
 
 const jon = await request.get('/lords/1')
 // `jon` is an Entity object
